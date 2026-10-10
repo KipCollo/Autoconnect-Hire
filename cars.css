@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* intro section starts here */
+.about-bg {
+  height: 60vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(images/Atenza1.png);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-type {
+  display: flex;
+  position: sticky;
+  top: 50px;
+  width: 100%;
+  gap: 10px;
+}
+button {
+  padding: 8px 30px;
+  font-size: 30;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+.about-bg h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  letter-spacing: 4px;
+}
+
+.text {
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.about-bg .text {
+  margin: 1.6rem 0;
+}
+
+/* intro section ends here */
+
+/* vehicles section starts here */
+.mazda {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.mazda .pro {
+  width: 20%;
+  min-width: 250px;
+  border: 1px solid #cce7d0;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: 0.2s ease;
+  position: relative;
+}
+
+.mazda .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mazda .pro .producto {
+  width: 100%;
+}
+
+.mazda .pro .star-icon {
+  width: 16px;
+  border: 0;
+}
+
+.mazda .pro .description {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.mazda .pro .description span {
+  color: #606063;
+  font-size: 12px;
+}
+
+.mazda .pro .description h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.mazda .hire-icon-container {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f0ed;
+  font-weight: 500;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.mazda .hire-icon-container:hover {
+  transform: scale(1.08);
+}
+
+.hire-icon-container a {
+  display: flex;
+  margin: auto;
+}
+
+.mazda .pro .hire-icon {
+  width: 20px;
+}
+
+.mazda .pro .description h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+/* responsiveness */
+.mazda .product-container {
+  justify-content: center;
+}
+
+.mazda .pro {
+  margin: 15px;
+}

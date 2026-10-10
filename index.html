@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Hire</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="header.css" /> -->
+    <!-- <link rel="stylesheet" href="footer.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <span class="hamburger-btn"><i class="fa fa-bars"></i></span>
+        <a href="/" class="logo">
+          <img src="images/Hire icon.png" alt="logo" width="50" height="50" />
+          <h2>CarHire</h2>
+        </a>
+
+        <ul class="links">
+          <span class="close-btn"><i class="fa fa-times"></i></span>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About us</a></li>
+          <li><a href="/contactus.html">Contact us</a></li>
+          <li><a href="/contactus.html">Contact</a></li>
+          <li><a href="/contactus.html">Cont</a></li>
+        </ul>
+
+        <div>
+          <button class="login-btn">Login/Signup</button>
+          <button class="login-book">Book</button>
+        </div>
+      </nav>
+
+      <!-- <div class="bg-overlay"></div> -->
+      <div class="form-popup">
+        <span class="close-btn"><i class="fa fa-times"></i></span>
+
+        <div class="form-box login">
+          <div class="form-content">
+            <h2>LOGIN</h2>
+            <form action="/login" method="post">
+              <div class="input-field">
+                <input type="text" required autofocus />
+                <label>Email</label>
+              </div>
+              <div class="input-field">
+                <input type="password" required />
+                <label>Password</label>
+              </div>
+              <a href="/forgotpass" class="forgot-pass-link"
+                >Forgot password?</a
+              >
+              <button type="submit">Log In</button>
+            </form>
+            <div class="bottom-link">
+              Don't have an account?
+              <a href="#" id="signup-link">Signup</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box signup">
+          <form id="form" action="/register" method="post">
+            <h1>REGISTER</h1>
+            <div class="input-control">
+              <label for="firstnamename">First Name</label>
+              <input
+                id="firstname"
+                name="firstname"
+                type="text"
+                required
+                autofocus
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="lastname">Last Name</label>
+              <input id="lastname" name="lastname" type="text" required />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="text" required />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" required />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="password2">Confirm Password</label>
+              <input id="password2" name="password2" type="password" required />
+              <div class="error"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+
+            <div class="bottom-link">
+              Already have an account?
+              <a href="#" id="login-link">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!--HOMEPAGE SECTION-->
+    <section class="homepage-box">
+      <video src="images/Atenza1.png" autoplay muted loop></video>
+      <div class="home-info">
+        <div class="outside">Experience The Road</div>
+        <div class="inside">Like Never Before</div>
+      </div>
+      <h2>HIRE YOUR PERFECT CAR AT THE BEST COST.</h2>
+      <div class="home-buttons">
+        <a class="boxBtn">View available cars</a>
+        <a class="boxBtn-2">Hire Now</a>
+      </div>
+      <div class="below">
+        <div class="below-1">
+          <div class="below-1__1">Experience The Road Like Never Before</div>
+          <div class="below-1__2">150+</div>
+          <div class="below-1__3">12+ 100%</div>
+        </div>
+      </div>
+    </section>
+
+    <!--BRAND AND AVAILBALE CARS SECTION-->
+    <section class="section brand">
+      <div class="brand-container container">
+        <h2>Available Brands & cars</h2>
+        <ul class="brand-images">
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/toyota/toyota.png"
+              alt="Toyota logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/mercedes/mercedes.png"
+              alt="Mercedes logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/mazda/mazda.png"
+              alt="Mazda logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/honda/honda.png"
+              alt="Honda logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+          <li class="brand-image">
+            <img
+              src="images/nissan/nissan.png"
+              alt="Nissan logo"
+              width="100"
+              height="100"
+              class="brand-img"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <ul class="available-cars">
+        <li class="card">
+          <div class="card-header">
+            <img
+              src="images/toyota/TX1.jpg"
+              height="250"
+              width="250"
+              alt="Toyota car"
+            />
+          </div>
+          <div class="card-body">
+            <h4>TOYOTA</h4>
+            <span class="tag tag-red"
+              ><a href="/toyota/toyota.html"
+                >View All<i class="fa fa-arrow-right"></i></a
+            ></span>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header">
+            <img
+              src="images/toyota/TX1.jpg"
+              height="250"
+              width="250"
+              alt="Toyota car"
+            />
+          </div>
+          <div class="card-body">
+            <h4>TOYOTA</h4>
+            <span class="tag tag-red"
+              ><a href="/toyota/toyota.html"
+                >View All<i class="fa fa-arrow-right"></i></a
+            ></span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-header">
+            <img
+              src="images/mazda/CX-3-3.jpeg"
+              alt="mazda car image"
+              height="250"
+              width="250"
+            />
+          </div>
+          <div class="card-body">
+            <h4>MAZDA</h4>
+            <span class="tag tag-red"
+              ><a href="/mazda/mazda.html"
+                >View All<i class="fa fa-arrow-right"></i></a
+            ></span>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header">
+            <img
+              src="images/mazda/CX-3-3.jpeg"
+              alt="mazda car image"
+              height="250"
+              width="250"
+            />
+          </div>
+          <div class="card-body">
+            <h4>MAZDA</h4>
+            <span class="tag tag-red"
+              ><a href="/mazda/mazda.html"
+                >View All<i class="fa fa-arrow-right"></i></a
+            ></span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-header">
+            <img
+              src="images/mercedes/slk1.webp"
+              alt="mercedes car image"
+              height="250"
+              width="250"
+            />
+          </div>
+          <div class="card-body">
+            <h4>MERCEDES BENZ</h4>
+            <span class="tag tag-red"
+              ><a href="/mercedes/mercedes.html"
+                >View All<i class="fa fa-arrow-right"></i></a
+            ></span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-header">
+            <img
+              src="images/nissan/tiida1.png"
+              alt="Nissan car image"
+              height="250"
+              width="250"
+            />
+          </div>
+          <div class="card-body">
+            <h4>NISSAN</h4>
+            <span class="tag tag-red"
+              ><a href="/nissan/nissan.html"
+                >View All<i class="fa fa-arrow-right"></i></a
+            ></span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-header">
+            <img
+              src="images/honda/veze12.jpg"
+              alt="Honda car image"
+              height="250"
+              width="250"
+            />
+          </div>
+          <div class="card-body">
+            <h4>HONDA</h4>
+            <span class="tag tag-red"
+              ><a href="/honda/honda.html"
+                >View All<i class="fa fa-arrow-right"></i></a
+            ></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!--INFO SECTION-->
+    <section class="info-container">
+      <div class="info-image">
+        <img
+          src="images/mazda/Atenza1.png"
+          alt="car"
+          width="130"
+          height="130"
+        />
+        <img
+          src="images/mazda/Axela1.jpeg"
+          alt="car"
+          width="120"
+          height="120"
+        />
+      </div>
+      <div class="info-content">
+        <h2 class="section-header">Why Our Car Hire Company...</h2>
+        <div class="info-grid">
+          <div class="info-details">
+            <h4>Wide range of brands</h4>
+            <p>
+              We offer a wide range of brands to meet the diverse needs and
+              preferences of our valued customers. From luxurious to basic, our
+              extensive inventory provides options for every budget and
+              lifestyle.
+            </p>
+          </div>
+          <div class="info-details">
+            <h4>Trusted by thousands</h4>
+            <p>
+              Our commitment to excellence and customer satisfaction has
+              improved our position as a trusted car hire company in the
+              industry.
+            </p>
+          </div>
+          <div class="info-details">
+            <h4>Car service and maintenance</h4>
+            <p>
+              We are dedicated to providing reliable rides to our customers.
+              That's why we ensure proper service on all of our vehicles, giving
+              you the assurance that you're driving away with a quality vehicle.
+            </p>
+          </div>
+          <div class="info-details">
+            <h4>Financing made easy</h4>
+            <p>
+              Financing your dream ride is made easy with our friendly rates. We
+              ensure you get the best possible rates and terms, ensuring a
+              smooth and stress-free financing experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--VEHICLE OFFER SECTION-->
+    <section id="mazda" class="mazda">
+      <h2>CARS ON OFFER</h2>
+      <ul class="product-container">
+        <li class="pro">
+          <a href="/Toyota/toyota-auris" target="_blank"
+            ><img
+              class="producto"
+              src="images/toyota/Auris1.jpg"
+              height="250"
+              width="250"
+          /></a>
+          <div class="description">
+            <span>SUV</span>
+            <h5>TOYOTA AURIS</h5>
+            <div class="star">
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+            </div>
+            <h4>Ksh.7,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-auris.html" target="_blank"
+              ><img class="hire-icon" src="images/Hire icon.png"
+            /></a>
+          </div>
+        </li>
+
+        <li class="pro">
+          <a href="/Honda/honda-accord" target="_blank"
+            ><img
+              class="producto"
+              src="images/honda/accord1.webp"
+              height="250"
+              width="250"
+          /></a>
+          <div class="description">
+            <span>Sedan</span>
+            <h5>HONDA ACCORD TOURER</h5>
+            <div class="star">
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+            </div>
+            <h4>Ksh.10,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Honda/honda-accord.html" target="_blank"
+              ><img class="hire-icon" src="images/Hire icon.png"
+            /></a>
+          </div>
+        </li>
+
+        <li class="pro">
+          <a href="/Mercedes/A-class" target="_blank"
+            ><img
+              class="producto"
+              src="images/mercedes/aclass1.avif"
+              height="250"
+              width="250"
+          /></a>
+          <div class="description">
+            <span>Saloon car</span>
+            <h5>MERCEDES A CLASS</h5>
+            <div class="star">
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+            </div>
+            <h4>Ksh.15,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Mercedes/A-class.html" target="_blank"
+              ><img class="hire-icon" src="images/Hire icon.png"
+            /></a>
+          </div>
+        </li>
+
+        <li class="pro">
+          <a href="/Nissan/nissan-dualis" target="_blank"
+            ><img
+              class="producto"
+              src="images/nissan/dualis1.avif"
+              height="250"
+              width="250"
+          /></a>
+          <div class="description">
+            <span>SUV</span>
+            <h5>NISSAN DUALIS</h5>
+            <div class="star">
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+              <img
+                class="star-icon"
+                src="images/star.png"
+                width="25"
+                height="25"
+              />
+            </div>
+            <h4>Ksh.20,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Nissan/nissan-dualis.html" target="_blank"
+              ><img class="hire-icon" src="images/Hire icon.png"
+            /></a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cards">
+      <div class="cards-container">
+        <h2 class="section-header">Our Guarantees</h2>
+        <div class="cards-grid">
+          <div class="cards-card">
+            <span><i class="fa fa-car"></i></span>
+            <h4>Quality and safety</h4>
+            <p>
+              We never compromise on quality and safety of our vehicles. We
+              avoid anything that undermines this core commitment.
+            </p>
+          </div>
+          <div class="cards-card">
+            <span><i class="fa fa-car"></i></span>
+            <h4>Privacy</h4>
+            <p>
+              We repect our customers' documents that come into our possession
+              at the time of transacting and we treat them with utmost
+              confidentiality.
+            </p>
+          </div>
+          <div class="cards-card">
+            <span><i class="fa fa-car"></i></span>
+            <h4>Fairness</h4>
+            <p>
+              We fully understand that we exist as a business to serve you. We
+              therefore remain straightforward in all our undertakings and
+              strive to meet our obligations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>
+              We deal with car hire services. Get the chance to choose your
+              perfect ride from our wide variety of car brands and models
+            </p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>+254 1234 5678</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>info@carhire.com</a>
+            </div>
+          </div>
+        </div>
+        <ul class="middle box">
+          <div class="topic">Quick Links</div>
+          <li><a href="/">Home</a></li>
+          <li><a href="/aboutUs">About Us</a></li>
+          <li><a href="/contactUs">Contact Us</a></li>
+        </ul>
+        <div class="right box">
+          <div class="topic">Subscribe To Our Newsletter</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address" />
+            <input type="submit" name="" value="Send" />
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          Copyright &copy;<span class="copyright-year"></span
+          ><a href="#">Car Hire</a> All rights reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About US</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../cars.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <!-- header section starts here -->
+  <header>
+    <nav class="navbar">
+      <span class="hamburger-btn"><i class="fa fa-bars"></i></span>
+      <a href="#" class="logo">
+        <img
+          src="{{ url_for('static', filename='images/Hire icon.png') }}"
+          alt="logo"
+        />
+        <h2>CarHire</h2>
+      </a>
+      <ul class="links">
+        <span class="close-btn"><i class="fa fa-times"></i></span>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About us</a></li>
+        <li><a href="../contact.html">Contact us</a></li>
+      </ul>
+
+      <button class="login-btn">Login/Signup</button>
+    </nav>
+  </header>
+
+  <div class="form-popup">
+    <span class="close-btn"><i class="fa fa-times"></i></span>
+
+    <div class="form-box login">
+      <div class="form-content">
+        <h2>LOGIN</h2>
+        <form action="#">
+          <div class="input-field">
+            <input type="text" required />
+            <label>Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <a href="#" class="forgot-pass-link">Forgot password?</a>
+          <button type="submit">Log In</button>
+        </form>
+        <div class="bottom-link">
+          Don't have an account?
+          <a href="#" id="signup-link">Signup</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-box signup">
+      <form id="form" action="#">
+        <h1>REGISTER</h1>
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password2">Confirm Password</label>
+          <input id="password2" name="password2" type="password" />
+          <div class="error"></div>
+        </div>
+        <button type="submit">Sign Up</button>
+
+        <div class="bottom-link">
+          Already have an account?
+          <a href="#" id="login-link">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- header section ends here -->
+
+  <div class="car-type">
+    <button>Auris</button><button>Corolla Axio</button><button>Fielder</button
+    ><button>Harrier</button><button>Passo</button><button>Premio</button
+    ><button>Roomy</button><button>Vitz</button><button>Landcruiser TX</button
+    ><button>Probox</button><button>Probox</button><button>Probox</button
+    ><button>Probox</button><button>Probox</button><button>Probox</button
+    ><button>Probox</button>
+  </div>
+  <!-- intro section starts here -->
+  <section class="about-section">
+    <div class="about-bg">
+      <h2>Toyota Collection</h2>
+      <p class="text">View the available Toyota cars below.</p>
+    </div>
+    <!-- intro section ends here -->
+
+    <!-- vehicles section starts here -->
+
+    <section id="mazda" class="mazda">
+      <h2>TOYOTA</h2>
+      <div class="product-container">
+        <div class="pro">
+          <a href="/Toyota/toyota-auris.html" target="_blank"
+            ><img class="producto" src="../images/toyota/Auris1.jpg"
+          /></a>
+          <div class="description">
+            <span>Sedan</span>
+            <h5>TOYOTA AURIS</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.7,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-auris.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-axio.html" target="_blank"
+            ><img class="producto" src="../images//toyota/Axio1.jpg"
+          /></a>
+          <div class="description">
+            <span>Sedan</span>
+            <h5>TOYOTA COROLLA AXIO</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.15,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-axio.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-fielder.html" target="_blank"
+            ><img class="producto" src="../images//toyota/Fielder1.jpg"
+          /></a>
+          <div class="description">
+            <span>SUV</span>
+            <h5>TOYOTA FIELDER</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.25,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-fielder.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-harrier.html" target="_blank"
+            ><img class="producto" src="../images//toyota/Harrier1.jpg"
+          /></a>
+          <div class="description">
+            <span>SUV</span>
+            <h5>TOYOTA HARRIER</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.30,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-harrier.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-noah.html" target="_blank"
+            ><img class="producto" src="../images/toyota/Noah1.jpg"
+          /></a>
+          <div class="description">
+            <span>Crossover</span>
+            <h5>TOYOTA NOAH</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.7,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-noah.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-passo.html" target="_blank"
+            ><img class="producto" src="../images/toyota/Passo1.jpg"
+          /></a>
+          <div class="description">
+            <span>Sedan</span>
+            <h5>TOYOTA PASSO</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh7,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-passo.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-premio.html" target="_blank"
+            ><img class="producto" src="../images/toyota/Premio1.jpg"
+          /></a>
+          <div class="description">
+            <span>SUV</span>
+            <h5>TOYOTA PREMIO</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.10,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-premio.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-roomy.html" target="_blank"
+            ><img class="producto" src="../images/toyota/Roomy1.jpg"
+          /></a>
+          <div class="description">
+            <span>Crossover</span>
+            <h5>TOYOTA ROOMY</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.7,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-roomy.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-vitz.html" target="_blank"
+            ><img class="producto" src="../images/toyota/Vitz1.jpg"
+          /></a>
+          <div class="description">
+            <span>Sedan</span>
+            <h5>TOYOTA VITZ</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.5,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-vitz.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <a href="/Toyota/toyota-tx.html" target="_blank"
+            ><img class="producto" src="../images/toyota/TX1.jpg"
+          /></a>
+          <div class="description">
+            <span>SUV</span>
+            <h5>TOYOTA LANDCRUISER PRADO TX</h5>
+            <div class="star">
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+              <img class="star-icon" src="../images/star.png" />
+            </div>
+            <h4>Ksh.30,000/day</h4>
+          </div>
+          <div class="hire-icon-container">
+            <a href="/Toyota/toyota-tx.html" target="_blank"
+              ><img class="hire-icon" src="../images/Hire icon.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vehicles section ends here -->
+  </section>
+</html>
