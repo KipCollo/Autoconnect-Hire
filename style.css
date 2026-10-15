@@ -659,6 +659,69 @@ footer a:hover {
 }
 /* homepage section ends here */
 
+/* steps section*/
+.section-step {
+  height: 50vh;
+  margin-top: 6%;
+}
+.section-step h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.steps {
+  width: 80%;
+  gap: 20px;
+  list-style: none;
+  counter-reset: horizontal-step;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+.steps .steps-items {
+  counter-increment: horizontal-step;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+.steps .steps-items h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.steps .steps-items::before {
+  content: counter(horizontal-step);
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.steps .steps-items::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  top: 12px;
+  left: 250px;
+  width: 100%;
+  z-index: -1;
+  width: calc(100% + 30px);
+}
+
+.steps .steps-items:last-child::after {
+  display: none;
+}
+
 /* Brand and car section starts here */
 .brand-section {
   display: flex;
