@@ -11,6 +11,6 @@ The customer can view available cars,book a car(s),pay for the booking fee,creat
 Admin can add new vehicles to inventory,see all registered customers,view vehicle maintenance,remove users,update vehicles details,view reports on hiring activities and system performance,register staffs and drivers.
 Vehicles - Available,maintenance,hired,booked.
 
--- Current Hero section--
+-- Current Landing section--
 
-<img src="Hero.png>
+<img src="Hero.png" />
