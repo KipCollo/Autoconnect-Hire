@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Hire</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="header.css" /> -->
-    <!-- <link rel="stylesheet" href="footer.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -17,13 +21,13 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
 
   <body>
     <header>
       <nav class="navbar">
-        <span class="hamburger-btn"><i class="fa fa-bars"></i></span>
         <a href="/" class="logo">
           <img src="images/Hire icon.png" alt="logo" width="50" height="50" />
           <h2>CarHire</h2>
@@ -39,14 +43,16 @@
         </ul>
 
         <div>
+          <button class="login-book">
+            Book <i class="fa-regular fa-circle-down"></i>
+          </button>
           <button class="login-btn">Login/Signup</button>
-          <button class="login-book">Book</button>
         </div>
       </nav>
 
-      <!-- <div class="bg-overlay"></div> -->
       <div class="form-popup">
-        <span class="close-btn"><i class="fa fa-times"></i></span>
+        <button class="btn btn-register">New to AutoConnect?</button>
+        <button class="btn btn-login">Already Registerd?</button>
 
         <div class="form-box login">
           <div class="form-content">
@@ -119,27 +125,32 @@
 
     <!--HOMEPAGE SECTION-->
     <section class="homepage-box">
-      <video src="images/Atenza1.png" autoplay muted loop></video>
       <div class="home-info">
-        <div class="outside">Experience The Road</div>
-        <div class="inside">Like Never Before</div>
+        <p class="outside">Experience The Road</p>
+        <p class="inside">Like Never Before</p>
       </div>
-      <h2>HIRE YOUR PERFECT CAR AT THE BEST COST.</h2>
+
       <div class="home-buttons">
-        <a class="boxBtn">View available cars</a>
+        <a class="boxBtn">Available cars</a>
         <a class="boxBtn-2">Hire Now</a>
       </div>
       <div class="below">
         <div class="below-1">
-          <div class="below-1__1">Experience The Road Like Never Before</div>
-          <div class="below-1__2">150+</div>
+          <div class="below-1__1">
+            <h2>HIRE YOUR PERFECT CAR AT THE BEST COST.</h2>
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <div class="below-1__2">
+            <h2>140+</h2>
+            <p>vehicles</p>
+          </div>
           <div class="below-1__3">12+ 100%</div>
         </div>
       </div>
     </section>
 
     <!--BRAND AND AVAILBALE CARS SECTION-->
-    <section class="section brand">
+    <section class="brand-section brand">
       <div class="brand-container container">
         <h2>Available Brands & cars</h2>
         <ul class="brand-images">
@@ -310,6 +321,23 @@
       </div>
 
       <ul class="available-cars">
+        <li class="card">
+          <div class="card-header">
+            <img
+              src="images/toyota/TX1.jpg"
+              height="250"
+              width="250"
+              alt="Toyota car"
+            />
+          </div>
+          <div class="card-body">
+            <h4>TOYOTA</h4>
+            <span class="tag tag-red"
+              ><a href="/toyota/toyota.html"
+                >View All<i class="fa fa-arrow-right"></i></a
+            ></span>
+          </div>
+        </li>
         <li class="card">
           <div class="card-header">
             <img
