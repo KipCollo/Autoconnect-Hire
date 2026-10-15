@@ -8,9 +8,9 @@ const signupLoginLink = formPopup.querySelectorAll(".bottom-link a");
 const overlay = document.querySelector(".bg-overlay");
 
 // Show mobile menu
-hamburgerBtn.addEventListener("click", () => {
-  navbarMenu.classList.toggle("show-menu");
-});
+// hamburgerBtn.addEventListener("click", () => {
+//   navbarMenu.classList.toggle("show-menu");
+// });
 
 // Hide mobile menu
 hideMenuBtn.addEventListener("click", () => hamburgerBtn.click());
@@ -21,11 +21,11 @@ showPopupBtn.addEventListener("click", () => {
 });
 
 // Hide login popup
-hidePopupBtn.addEventListener("click", () => showPopupBtn.click());
+// hidePopupBtn.addEventListener("click", () => showPopupBtn.click());
 
-overlay.addEventListener("click", function () {
-  showPopupBtn.click();
-});
+// overlay.addEventListener("click", function () {
+//   showPopupBtn.click();
+// });
 
 // Show or hide signup form
 signupLoginLink.forEach((link) => {

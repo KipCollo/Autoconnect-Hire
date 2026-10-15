@@ -10,3 +10,7 @@ Currently the website is a static website.I intend to extend the capabilities of
 The customer can view available cars,book a car(s),pay for the booking fee,create account,login.
 Admin can add new vehicles to inventory,see all registered customers,view vehicle maintenance,remove users,update vehicles details,view reports on hiring activities and system performance,register staffs and drivers.
 Vehicles - Available,maintenance,hired,booked.
+
+-- Current Hero section--
+
+<img src="Hero.png>
