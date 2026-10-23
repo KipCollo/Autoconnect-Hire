@@ -6,6 +6,7 @@ const formPopup = document.querySelector(".form-popup");
 const hidePopupBtn = formPopup.querySelector(".close-btn");
 const signupLoginLink = formPopup.querySelectorAll(".bottom-link a");
 const overlay = document.querySelector(".bg-overlay");
+const bookBtn = document.querySelector(".btn-book");
 
 // Show mobile menu
 // hamburgerBtn.addEventListener("click", () => {
@@ -18,6 +19,10 @@ hideMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 // Show login popup
 showPopupBtn.addEventListener("click", () => {
   document.body.classList.toggle("show-popup");
+});
+
+bookBtn.addEventListener("click", () => {
+  document.body.classList.toggle("show-booking");
 });
 
 // Hide login popup

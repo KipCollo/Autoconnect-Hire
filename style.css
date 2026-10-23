@@ -77,7 +77,7 @@ header {
   cursor: pointer;
   transition: 0.15s ease;
 }
-.navbar .login-book {
+.navbar .btn-book {
   padding: 10px 35px;
   background: transparent;
   color: #fff;
@@ -107,12 +107,13 @@ header {
   top: 55px;
   right: 150px;
   width: 350px;
+  color: #000;
   opacity: 0;
   backdrop-filter: blur(5px);
   pointer-events: none;
   max-width: 420px;
   border-radius: 10px;
-
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -124,14 +125,6 @@ header {
     transform 0.3s ease,
     opacity 0.1s;
 }
-/* 
-.form-popup .close-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  color: #878484;
-  cursor: pointer;
-} */
 
 .form-popup .btn {
   border: none;
@@ -139,21 +132,22 @@ header {
   padding: 8px 10px;
   background: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000000;
   font-weight: 600;
-  border-right: solid 1px #ffffff;
+  border-right: solid 2px #000;
   cursor: pointer;
 }
 .form-popup .btn-register {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 2px #000;
 }
 .form-popup .btn-login {
-  border-top: solid 1px #ffffff;
+  border-top: solid 2px #000;
 }
 
 .login,
 .signup {
   grid-column: span 2;
+  opacity: 0.8;
 }
 .form-box .form-content {
   width: 100%;
@@ -163,7 +157,8 @@ header {
 .form-box h2 {
   font-size: 16px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
+  opacity: 0.7;
 }
 
 form .input-field {
@@ -180,13 +175,14 @@ form .input-field {
   outline: none;
   font-size: 0.95rem;
   padding: 0 15px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
   border-radius: 3px;
-  color: #fff;
+  color: #000000;
+  opacity: 0.7;
 }
 
 .input-field input:focus {
-  border: 1px solid rgb(202, 201, 201);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .input-field label {
@@ -194,9 +190,10 @@ form .input-field {
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  color: #fff;
+  color: #000;
   pointer-events: none;
   transition: 0.2s ease;
+  opacity: 0.8;
 }
 
 .input-field input:is(:focus, :valid) {
@@ -205,13 +202,14 @@ form .input-field {
 
 .input-field input:is(:focus, :valid) ~ label {
   transform: translateY(-120%);
-  color: #ffffff;
+  color: #000;
   font-size: 0.55rem;
 }
 
 .form-box a {
-  color: #ffffff;
+  color: #000;
   font-size: 14px;
+  opacity: 0.8;
   text-decoration: none;
 }
 
@@ -269,11 +267,10 @@ form button {
 }
 
 #form button {
-  padding: 10px;
   margin-top: 10px;
   width: 100%;
   color: white;
-  background-color: #0097a7;
+  background-color: red;
   border: none;
   border-radius: 4px;
 }
@@ -385,6 +382,66 @@ form button {
   }
 }
 
+.booking {
+  width: 30%;
+  background-color: #fff;
+  color: #000;
+  padding: 12px 0;
+  position: absolute;
+  right: 30px;
+  opacity: 0;
+}
+.booking .progress {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: red;
+}
+.booking .progress .progress-number {
+  height: 16px;
+  width: 16px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 50%;
+  color: red;
+}
+
+.booking-contents {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 12px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  padding: 16px;
+}
+
+.booking-contents .date-disp {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking button {
+  position: absolute;
+  right: 30px;
+  bottom: 6px;
+  border: 1px solid red;
+  border-radius: 24px;
+  padding: 6px 8px;
+  color: red;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.show-booking .booking {
+  opacity: 1;
+  pointer-events: auto;
+  transition:
+    transform 0.3s ease,
+    opacity 0.1s;
+}
 /* header css ends here */
 
 /* footer css for all pages */
@@ -669,10 +726,11 @@ footer a:hover {
 
 /* steps section*/
 .section-step {
-  height: 32vh;
+  width: 100%;
+  margin: 34px 0;
 }
 .section-step h2 {
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   margin-bottom: 28px;
 }
