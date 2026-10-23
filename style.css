@@ -659,10 +659,17 @@ footer a:hover {
 }
 /* homepage section ends here */
 
+/*Vehicles inspo */
+.vehicles-inspo {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px auto;
+}
+/*Vehicles inspo ends here*/
+
 /* steps section*/
 .section-step {
   height: 32vh;
-  margin-top: 6%;
 }
 .section-step h2 {
   font-size: 24px;
@@ -925,6 +932,29 @@ footer a:hover {
 
 .info-details p {
   color: var(--text-light);
+}
+
+.car-filters {
+  border-top: 1px solid rgba(255, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+  padding: 12px;
+  display: flex;
+  margin-bottom: 12px;
+  gap: 28px;
+  align-items: center;
+}
+
+.car-filters .filter {
+  opacity: 0.6;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.car-filters button {
+  padding: 8px 24px;
+  opacity: 0.6;
+  border-radius: 24px;
+  cursor: pointer;
 }
 
 @media (width < 1200px) {
