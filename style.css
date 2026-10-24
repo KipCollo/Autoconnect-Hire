@@ -9,6 +9,10 @@ body {
   line-height: 1.5;
 }
 
+i {
+  height: 28px;
+}
+
 /* Header section */
 header {
   position: absolute;
@@ -570,6 +574,17 @@ form button {
   justify-content: space-around;
   margin: 24px auto;
 }
+.vehicle-inspo-icon {
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background: #eb2f06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
 /*Vehicles inspo ends here*/
 
 /* steps section*/
@@ -812,6 +827,11 @@ form button {
   gap: 2rem;
   margin: 24px auto;
   width: 90%;
+}
+
+.info-content-icon {
+  height: 28px;
+  color: #eb2f06;
 }
 
 .info-grid {
